@@ -11,6 +11,8 @@ Imigir::Application.routes.draw do
   # get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
   # put 'pictures/:id' => "pictures#update"
 
+  # -----------------------
+
   # post 'pictures' => "pictures#create"
 
   # get 'pictures' => 'pictures#index'
@@ -19,6 +21,8 @@ Imigir::Application.routes.draw do
   # get 'pictures/:id' => 'pictures#show', as: "picture"
 
   # root :to => "pictures#index"
+
+  # -----------------------
 
   resources :pictures
   root :to => "pictures#index"
