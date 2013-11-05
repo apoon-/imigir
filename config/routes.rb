@@ -1,12 +1,27 @@
 Imigir::Application.routes.draw do
 
+  # root :to => "pictures#index"
+  # get 'pictures' => 'pictures#index'
+
+  # post 'pictures' => "pictures#create"
+  # get 'pictures/new' => "pictures#new"
+
+  # get 'pictures/:id' => "pictures#show"
+
+  # get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+  # put 'pictures/:id' => "pictures#update"
+
+  # post 'pictures' => "pictures#create"
+
+  # get 'pictures' => 'pictures#index'
+  # get 'pictures/new' => 'pictures#new'
+  # get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+  # get 'pictures/:id' => 'pictures#show', as: "picture"
+
+  # root :to => "pictures#index"
+
+  resources :pictures
   root :to => "pictures#index"
-  get 'pictures' => 'pictures#index'
-
-  post 'pictures' => "pictures#create"
-  get 'pictures/new' => "pictures#new"
-
-  get 'pictures/:id' => "pictures#show"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
