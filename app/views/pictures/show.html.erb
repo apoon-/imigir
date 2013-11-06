@@ -1,4 +1,9 @@
-<%= link_to "Back to Pictures", pictures_url %> | <%= link_to "Edit", edit_picture_path(@picture) %>
+<div class = "header">
+  <h1> Picture View </h1>
+</div>
+
+<div class = "button">
+<%= link_to "Back to Pictures", pictures_url %> | <%= link_to "Edit", edit_picture_path(@picture) %></div>
 
 <p><%= @picture[:title] %>, <%= @picture[:artist] %></p>
 <%= image_tag @picture.url %>
