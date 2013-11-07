@@ -3,7 +3,7 @@
 </div>
 
 <div class = "button2">
-<%= link_to "Back to Pictures", pictures_url %> <%= link_to "| Edit", edit_picture_path(@picture) %> <%= link_to "| Delete", @picture, :confirm => "Do you really want to delete this picture?", :method => :delete %> </div>
+<%= link_to "< Back to Pictures", pictures_url %> <%= link_to "| Edit", edit_picture_path(@picture) %> <%= link_to "| Delete", @picture, :confirm => "Do you really want to delete this picture?", :method => :delete %> </div>
 
 <div class = "showpic">
 <p><%= @picture[:title] %>, <%= @picture[:artist] %></p>
