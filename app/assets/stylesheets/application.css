@@ -59,7 +59,7 @@ h1 {
 }
 
 .button a:hover {
-  color: #0E53A7;
+  color: #008CFF;
   font-weight: 400;
 }
 
@@ -73,14 +73,13 @@ h1 {
 }
 
 .picture p {
-  margin-left: 10px;
+  margin-left: 6px;
   font-size: 1.01em;
   margin-bottom: -2px;
   font-weight: 300;
 }
 
 .picture img {
-  overflow: hidden;
   display: inline;
 }
 
@@ -100,8 +99,8 @@ h1 {
 
 .gallery img:hover {
   z-index: 999;
-  background-color: #0E53A7;
-  opacity: 0.3;
+  background-color: #00EEFF;
+  opacity: 0.6;
 }
 
 .gallery > div {
@@ -154,15 +153,17 @@ h1 {
 }
 
 .button2 a:hover {
-  color: #0E53A7;
+  color: #008CFF;
   font-weight: 400;
 }
 
 .showpic {
   position: relative;
-  margin: 2px;
+  margin: 0;
   display: inline-block;
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .showpic p {
@@ -172,9 +173,9 @@ h1 {
 }
 
 .showpic img {
-  width: 100%;
-  height: 100%;
   padding: 0;
+  float: none;
+  width: 100%;
 }
 
 .showpic img:hover {
