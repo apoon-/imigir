@@ -2,10 +2,12 @@
   <h1> Picture View </h1>
 </div>
 
-<div class = "button">
-<%= link_to "Back to Pictures", pictures_url %> | <%= link_to "Edit", edit_picture_path(@picture) %></div>
+<div class = "button2">
+<%= link_to "Back to Pictures", pictures_url %> <%= link_to "| Edit", edit_picture_path(@picture) %> <%= link_to "| Delete", @picture, :confirm => "Do you really want to delete this picture?", :method => :delete %> </div>
 
+<div class = "showpic">
 <p><%= @picture[:title] %>, <%= @picture[:artist] %></p>
-<%= image_tag @picture.url %>
+<%= image_tag @picture.url %></div>
 
-<%= link_to "Delete", @picture, :confirm => "Do you really want to delete this picture?", :method => :delete %>
+<!-- <div class = "delete">
+<%= link_to "Delete", @picture, :confirm => "Do you really want to delete this picture?", :method => :delete %></div> -->
