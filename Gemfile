@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+  
+gem 'capistrano', '~> 2.15'
+gem 'unicorn'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -32,9 +34,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-gem 'capistrano', '~> 2.15'
-gem 'unicorn'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
