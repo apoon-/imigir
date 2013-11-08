@@ -182,7 +182,27 @@ h1 {
   opacity: 1.0;
 }
 
+.recent {
+  float: none !important;
+  margin: 20px auto;
+  width: 30%;
+}
 
+.recent ol {
+  margin: 5px;
+  font-size: 1.3em;
+  text-align: center;
+  color: #00EEFF;
+}
+
+.recent_button {
+  width: 120%;
+  height: 20px;
+  font-size: 1.2em;
+  margin: -25px 0 0 -10px;
+  float: none;
+  background-color: #eee;
+}
 
 /*footer {
   margin: 40px 0;

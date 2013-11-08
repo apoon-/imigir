@@ -11,4 +11,29 @@
   <p><%= picture[:title] %>, <%= picture[:artist].upcase %></p>
     <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
 </div>
+
 <% end %> 
+
+<h1>Most recent pictures</h1>
+
+<div class = "recent_button"></div>
+
+<div class = "recent">
+  <ol>
+    <% @most_recent_pictures.each do |picture| %>
+      <li><%= picture.title %></li>
+    <% end %>
+  </ol>
+</div>
+
+<h1>This week's pictures</h1>
+
+<div class = "recent_button"></div>
+
+<div class = "recent">
+  <ol>
+    <% @week_pictures.each do |picture| %>
+      <li><%= picture.title %></li>
+    <% end %>
+  </ol>
+</div>
